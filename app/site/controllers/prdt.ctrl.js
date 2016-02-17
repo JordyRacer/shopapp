@@ -15,6 +15,7 @@ function prdtCtrl(api, productSrv, $location, $state) {
 	ctrl.cartItem = [];
 
 	ctrl.categories = [
+		{label:'Show all'},
 		{label:'Country',value:'country'},
 		{label:'Pop',value:'pop'},
 		{label:'Rap/Hip-Hop',value:'rap/hip-Hop'},
@@ -22,6 +23,10 @@ function prdtCtrl(api, productSrv, $location, $state) {
 		{label:'Rock',value:'rock'},
 	];
 	ctrl.products = this.prdtSrv.products;
+
+	ctrl.curPage = 0;
+	ctrl.itemsPerPage = 6;
+	ctrl.numPages = Math.ceil(ctrl.products.length / ctrl.itemsPerPage);
 
 }
 
