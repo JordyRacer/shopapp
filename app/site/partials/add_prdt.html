@@ -1,39 +1,62 @@
+  <header>
+            <div class="wrapper">
+                <a href="#"><img src="assets/img/logo.png" class="logo" alt="" title=""/></a>
+                <a href="#" class="hamburger"></a>
+                
+            </div>
+        </header>
+
 <div id="wrapper">
         <div id="page-content-wrapper">
+
             <div class="container-fluid">
                 <div class="row">
+
+                	<div class="form-group row">
 <!-- Add new product -->
-				<h2>Add New Product</h2>
-				<form name="addProduct" class="" ng-submit="ctrl.addProduct()" novalidate>
-					<div>
+				<h1>Add New Product</h1>
+
+
+
+
+				<form name="addProduct" class="userInputForm form-group" ng-submit="ctrl.addProduct()" novalidate>
+					
+					<ul>
+						
+						<li>	
 						<label>Name</label>
 						<input type="text" name="name" ng-model="ctrl.name" required>
-					</div>
-					<div>
+						</li>
+    		
+					<li>
 						<label>Image</label>
 						<input type="text" name="image" ng-model="ctrl.image" required>
-					</div>
-					<div>
-						<label>Description</label>
-						<textarea ng-model="ctrl.description"></textarea>
-					</div>
-					<div>
+					</li>
+					<li>
 						<label>Category</label>
 						<select ng-options="option.value as option.label for option in ctrl.categories" ng-model="ctrl.category" name="category">
 						</select>
-					</div>
-					<div>
+					</li>
+					<li>
 						<label>Price</label>
 						<input type="number" name="price" ng-model="ctrl.price" required>
-					</div>
-					<div>
+					</li>
+					<li>
 						<label>Quantity</label>
 						<input type="number" name="quantity" ng-model="ctrl.quantity" required>
-					</div>
-					<div>
-						<button type="submit" ng-click="ctrl.submitProduct()">Add Product</button>
-					</div>
+					</li>
+					<li>
+						<label>Description</label>
+						<textarea ng-model="ctrl.description"></textarea>
+					</li>
+					<li>
+						<button class="userInputForm" type="submit" ng-click="ctrl.submitProduct()">Add Product</button>
+					</li>
+				</ul>
+
 				</form>
+
+				</div>
 			</div>
 		</div>
 	</div>

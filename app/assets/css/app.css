@@ -293,5 +293,42 @@ footer {
     border-top: 1px solid #82abd4;
 }
 
+/*add product*/
 
+.userInputForm {
+    font-family: "impact_label_reversedregular", Helvetica, Arial, sans-serif;
+    padding: 15px;
+    font-size: 20px;
+    vertical-align: middle;
+    }
+
+.userInputForm ul{
+    vertical-align: middle;
+    list-style: none;
+}
+
+.userInputForm li{
+    vertical-align: middle;
+    margin: 20px;
+}
+
+.userInputForm label{
+
+    vertical-align:text-top;
+    font-family: "impact_label_reversedregular", Helvetica, Arial, sans-serif;
+
+}
+
+/*Product managment page*/
+
+.productList{
+
+    font-size: 20px;
+    font-family: "impact_label_reversedregular", Helvetica, Arial, sans-serif;
+
+}
+
+.productList a{
+    color: red;
+}
 
